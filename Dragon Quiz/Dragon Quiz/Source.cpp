@@ -38,7 +38,7 @@ int main() {
 	if (input == 'F')
 		WaterDragon += 1;
 	else if (input == 'S')
-		FireDragon += 1 ;
+		FireDragon += 1;
 	else if (input == 'H')
 		DarkDragon += 1;
 	else if (input == 'G')
@@ -137,38 +137,13 @@ int main() {
 	else if (input == 'C')
 		EarthDragon += 0;
 
-	if (WaterDragon > FireDragon && WaterDragon > DarkDragon && WaterDragon > EarthDragon)
-		cout << "your a WaterDragon.";
-	else if (FireDragon > WaterDragon && FireDragon > DarkDragon && FireDragon > EarthDragon)
-		cout << "your a FireDragon";
-	else if (DarkDragon > WaterDragon && DarkDragon > FireDragon && DarkDragon > EarthDragon)
-		cout << "your a DarkDragon";
-	else if (EarthDragon > WaterDragon && EarthDragon > FireDragon && EarthDragon > DarkDragon)
-		cout << "your a EarthDragon";
-	cout << endl;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	if ((WaterDragon > FireDragon) && (WaterDragon > DarkDragon) && (WaterDragon > EarthDragon))
+		cout << "your a WaterDragon."<<endl;
+	else if ((FireDragon > WaterDragon) && (FireDragon > DarkDragon) && (FireDragon > EarthDragon))
+		cout << "your a FireDragon"<<endl;
+	else if ((DarkDragon > WaterDragon) && (DarkDragon > FireDragon) && (DarkDragon > EarthDragon))
+		cout << "your a DarkDragon" << endl;
+	else if ((EarthDragon > WaterDragon) && (EarthDragon > FireDragon) && (EarthDragon > DarkDragon))
+		cout << "your a EarthDragon" << endl;
+	
 }
